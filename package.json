@@ -1,0 +1,43 @@
+{
+  "name": "gorisond",
+  "description": "MERN web application",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.839.0",
+    "express": "4.16.2",
+    "node-rest-client": "^3.1.0",
+    "nodemailer": "^6.6.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7",
+    "mocha": "5.0.0",
+    "unit.js": "2.0.0",
+    "supertest": "3.0.0"
+  },
+  "scripts": {
+    "start-watch": "nodemon server.js",
+    "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\"",
+    "start": "node server.js",
+    "test": "mocha --recursive tests --exit"
+  },
+  "main": "config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HakimovMarat/Gorisond.git"
+  },
+  "keywords": [
+    "MERN",
+    "App"
+  ],
+  "author": "Hakimov Marat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HakimovMarat/Gorisond/issues"
+  },
+  "homepage": "https://github.com/HakimovMarat/Gorisond#readme"
+}
